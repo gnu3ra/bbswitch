@@ -344,6 +344,7 @@ static int bbswitch_proc_open(struct inode *inode, struct file *file) {
 
 static int bbswitch_pm_handler(struct notifier_block *nbp,
     unsigned long event_type, void *p) {
+  return;
     switch (event_type) {
     case PM_HIBERNATION_PREPARE:
     case PM_SUSPEND_PREPARE:
